@@ -11,7 +11,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ProductivityDashboardControllerController
 {
-    //@javafx.fxml.FXML
+
     @javafx.fxml.FXML
     private TableColumn<ProductivityDashboard, String> EmployeeCol;
     @javafx.fxml.FXML
@@ -45,9 +45,7 @@ public class ProductivityDashboardControllerController
         StatusCol.setCellValueFactory(new PropertyValueFactory<>("status"));
     }
 
-    // -------------------------
-    // EVENT: Refresh Data
-    // -------------------------
+
     @javafx.fxml.FXML
     public void RefreshOA(ActionEvent actionEvent) {
 
