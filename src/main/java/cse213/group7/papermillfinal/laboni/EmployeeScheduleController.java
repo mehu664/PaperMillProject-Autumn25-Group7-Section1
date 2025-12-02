@@ -62,9 +62,9 @@ public class EmployeeScheduleController {
 
         scheduleTable.setItems(scheduleList);
 
-        productionLevelCombo.setItems(FXCollections.observableArrayList("Low", "Medium", "High"));
-        ShiftTypeCombo.setItems(FXCollections.observableArrayList("Morning", "Evening", "Night"));
-        DepartmentCombo.setItems(FXCollections.observableArrayList("Cutting", "Finishing", "Maintenance"));
+        productionLevelCombo.getItems().addAll("Low", "Medium", "High");
+        ShiftTypeCombo.getItems().addAll("Morning", "Evening", "Night");
+        DepartmentCombo.getItems().addAll("Cutting", "Finishing", "Maintenance");
     }
 
     @javafx.fxml.FXML
