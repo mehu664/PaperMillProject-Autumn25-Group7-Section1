@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.group7.papermillfinal.User5Goal2Controller">
+   <children>
+      <Label fx:id="profitMonitoringTF" layoutX="69.0" layoutY="43.0" text="Profit Margin Monitoring" />
+      <TableView layoutX="54.0" layoutY="153.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="DescriptionTF" prefWidth="75.0" text="Description" />
+          <TableColumn fx:id="TypeTF" prefWidth="75.0" text="Type" />
+        </columns>
+      </TableView>
+      <Button layoutX="413.0" layoutY="306.0" mnemonicParsing="false" onAction="#OpenProfitDashboardOA" text="Open Profit Dashboard" />
+   </children>
+</AnchorPane>

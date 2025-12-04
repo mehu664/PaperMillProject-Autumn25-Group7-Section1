@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="452.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.group7.papermillfinal.meher.User4Goal5Controller">
+
+    <Label layoutX="213.0" layoutY="25.0" style="-fx-font-size:18px; -fx-font-weight:bold;" text="Customer Complaint Logging" />
+
+    <Button layoutX="121.0" layoutY="80.0" onAction="#handleLogComplaintButton" prefHeight="25.0" prefWidth="504.0" text="Log Customer Complaint" />
+
+    <Label layoutX="20" layoutY="130" text="Customer Name:" />
+    <TextField fx:id="customerNameTextField" layoutX="150.0" layoutY="126.0" prefWidth="250" />
+
+    <Label layoutX="20" layoutY="180" text="Product Code:" />
+    <TextField fx:id="productTextField" layoutX="150" layoutY="175" prefWidth="250" />
+
+    <Label layoutX="20" layoutY="230" text="Complaint Details:" />
+    <TextArea fx:id="detailsTextArea" layoutX="145.0" layoutY="226.0" prefHeight="103.0" prefWidth="467.0" />
+
+    <Button layoutX="238.0" layoutY="344.0" onAction="#handleSubmitButton" prefWidth="200" text="Submit" />
+    <Button layoutX="532.0" layoutY="389.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+
+</AnchorPane>

@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 
 public class User3Goal3Controller
@@ -18,6 +19,8 @@ public class User3Goal3Controller
     private TextField evventLogTextField;
     @javafx.fxml.FXML
     private Label showLimitLLabel;
+    @javafx.fxml.FXML
+    private Button verifyLimitButton;
     @javafx.fxml.FXML
     private TextArea storageMatricsTextArea;
 

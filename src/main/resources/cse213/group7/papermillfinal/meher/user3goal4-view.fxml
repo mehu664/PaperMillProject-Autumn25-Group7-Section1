@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="437.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.group7.papermillfinal.meher.User3Goal4Controller">
    <children>
       <Label layoutX="233.0" layoutY="36.0" prefHeight="20.0" prefWidth="133.0" text="Logistic Cost Report">
@@ -23,6 +22,6 @@
       <Label layoutX="46.0" layoutY="145.0" text="Report Preview :" />
       <Button layoutX="213.0" layoutY="302.0" mnemonicParsing="false" onAction="#generatReportButton" prefHeight="25.0" prefWidth="168.0" text="Generate Report" />
       <Button layoutX="491.0" layoutY="381.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
-      <Label fx:id="notifyLabel" layoutX="223.0" layoutY="350.0" prefHeight="17.0" prefWidth="145.0" text="Label" />
+      <Label fx:id="notifyLabel" layoutX="135.0" layoutY="350.0" prefHeight="25.0" prefWidth="333.0" />
    </children>
 </AnchorPane>
