@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="509.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.group7.papermillfinal.laboni.ProductivityDashboardControllerController">
+<AnchorPane prefHeight="509.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.group7.papermillfinal.laboni.ProductivityDashboardController">
    <children>
       <Label alignment="CENTER" layoutX="154.0" layoutY="18.0" prefHeight="53.0" prefWidth="390.0" text="Employee Productivity Dashboard">
          <font>
