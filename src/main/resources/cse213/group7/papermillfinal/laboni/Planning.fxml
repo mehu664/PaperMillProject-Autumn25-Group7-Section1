@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="577.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.group7.papermillfinal.laboni.PlanningController">
    <children>
       <Label alignment="CENTER" layoutX="104.0" layoutY="23.0" prefHeight="39.0" prefWidth="423.0" text="Overtime Planning &amp; Allocation">
@@ -32,5 +31,10 @@
         </columns>
       </TableView>
       <Label layoutX="127.0" layoutY="515.0" prefHeight="49.0" prefWidth="433.0" />
+      <Button layoutX="29.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackDashboardButton" prefHeight="32.0" prefWidth="47.0" text="&lt;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
