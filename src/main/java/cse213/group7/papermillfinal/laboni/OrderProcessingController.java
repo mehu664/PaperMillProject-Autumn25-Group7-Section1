@@ -2,9 +2,16 @@ package cse213.group7.papermillfinal.laboni;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class OrderProcessingController {
 
@@ -34,8 +41,15 @@ public class OrderProcessingController {
 
     @javafx.fxml.FXML
     public void BackOA(ActionEvent actionEvent) {
-
-        StatusTA.setText("Back button pressed (scene change to add)।");
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/cse213/group7/papermillfinal/logintry.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
