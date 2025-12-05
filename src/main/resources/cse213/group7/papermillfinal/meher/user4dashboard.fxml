@@ -7,15 +7,15 @@
 
 <AnchorPane prefHeight="499.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.group7.papermillfinal.meher.User4DashBoardController">
     <children>
-        <Label layoutX="158.0" layoutY="38.0" prefHeight="45.0" prefWidth="325.0" text=" Logistics And Supply Chain Manager DashBoard">
+        <Label layoutX="214.0" layoutY="42.0" prefHeight="45.0" prefWidth="171.0" text=" Quality ControlManager">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font></Label>
-        <Button layoutX="233.0" layoutY="108.0" mnemonicParsing="false" onAction="#handleUser3Goal1Button" prefHeight="25.0" prefWidth="133.0" text="Goal 1" />
-        <Button layoutX="233.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleUser3Goal2Button" prefHeight="25.0" prefWidth="133.0" text="Goal 2" />
-        <Button layoutX="233.0" layoutY="196.0" mnemonicParsing="false" onAction="#user3Goal3Button" prefHeight="25.0" prefWidth="133.0" text="Goal 3" />
-        <Button layoutX="483.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleBackDashboardButton" prefHeight="25.0" prefWidth="77.0" text="Back" />
-        <Button layoutX="229.0" layoutY="237.0" mnemonicParsing="false" onAction="#user3Goal4Button" prefHeight="25.0" prefWidth="141.0" text="Goal 4" />
-        <Button layoutX="229.0" layoutY="281.0" mnemonicParsing="false" onAction="#user3Goal5Button" prefHeight="25.0" prefWidth="141.0" text="Goal 5" />
+        <Button layoutX="233.0" layoutY="108.0" mnemonicParsing="false" onAction="#handleUser4Goal1Button" prefHeight="25.0" prefWidth="133.0" text="Goal 1" />
+        <Button layoutX="233.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleUser4Goal2Button" prefHeight="25.0" prefWidth="133.0" text="Goal 2" />
+        <Button layoutX="233.0" layoutY="196.0" mnemonicParsing="false" onAction="#user4Goal3Button" prefHeight="25.0" prefWidth="133.0" text="Goal 3" />
+        <Button layoutX="483.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleBackUser4DashboardButton" prefHeight="25.0" prefWidth="77.0" text="Back" />
+        <Button layoutX="229.0" layoutY="237.0" mnemonicParsing="false" onAction="#user4Goal4Button" prefHeight="25.0" prefWidth="141.0" text="Goal 4" />
+        <Button layoutX="229.0" layoutY="281.0" mnemonicParsing="false" onAction="#user4Goal5Button" prefHeight="25.0" prefWidth="141.0" text="Goal 5" />
     </children>
 </AnchorPane>

@@ -2,6 +2,8 @@ module cse213.group7.papermillfinal {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.desktop;
+    requires javafx.graphics;
+
 
 
     opens cse213.group7.papermillfinal to javafx.fxml;

@@ -6,12 +6,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
-import java.io.IOException;
+
+import java.io.*;
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Goal1Controller
 {
@@ -24,22 +24,68 @@ public class Goal1Controller
     @javafx.fxml.FXML
     private TextField supplierNameTextField;
     @javafx.fxml.FXML
-    private Label orderDatePicker;
-    @javafx.fxml.FXML
     private ComboBox<String> transportComboBox;
     @javafx.fxml.FXML
     private TextArea invoiceTextArea;
     @javafx.fxml.FXML
     private TextField materialTextField;
+    @javafx.fxml.FXML
+    private DatePicker orderDatePicker;
+
+    public ArrayList<Goal1> goal1List = new ArrayList<>();
 
     @javafx.fxml.FXML
-    public void initialize() {
+    public void initialize() throws IOException {
         transportComboBox.getItems().addAll("Truck","CargoShip","Rail","Van");
+
+        File F = new File("Goal1.bin");
+        if(!F.exists()){
+            return;
+        }
+
+        FileInputStream fis = new FileInputStream(F);
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        try {
+            while (true){
+                Goal1 nessa = (Goal1) ois.readObject();
+                goal1List.add(nessa);
+            }
+        }
+        catch (EOFException eof) {
+            System.out.println("Class not Found");
+        } catch (ClassNotFoundException e) {throw new RuntimeException(e);
+        }
+
 
     }
 
+
     @javafx.fxml.FXML
-    public void handleCalculateButton(ActionEvent actionEvent) {
+    public void handleCalculateButton (ActionEvent actionEvent) throws IOException {
+        Goal1 co = new Goal1(
+
+                materialTextField.getText(),
+                supplierNameTextField.getText(),
+                Integer.parseInt(quantityTextField.getText()),
+                transportComboBox.getValue(),
+                Integer.parseInt(distanceTextField.getText()),
+                orderDatePicker.getValue());
+
+        File N = new File("Goal1.bin");
+        FileOutputStream fos;
+        ObjectOutputStream oos;
+
+        if (N.exists()){
+            fos = new FileOutputStream(N, true);//objectkreplacenakorte
+            oos = new AppendalebObjectOutputStream(fos);
+        }
+        else {
+            fos = new FileOutputStream(N, true);//objectkreplacenakorte
+            oos = new ObjectOutputStream(fos);
+        }
+
+        oos.writeObject(co);
+       oos.close();
 
 
         int quantityNum = Integer.parseInt(quantityTextField.getText());
@@ -59,15 +105,14 @@ public class Goal1Controller
                 + "-------------------------------------------\n"
                 + "Thank you for using our transport service!\n";
 
-        // Display in the text area
+        // Display
         invoiceTextArea.setText(invoice);
 
         invoiceTextArea.setEditable(false);
 
+        goal1List.add(co);
 
     }
-
-    @Deprecated
 
     @javafx.fxml.FXML
     public void handleBackButton(ActionEvent actionEvent) {

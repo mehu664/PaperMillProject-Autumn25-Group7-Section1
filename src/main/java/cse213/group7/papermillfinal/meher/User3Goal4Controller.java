@@ -60,7 +60,7 @@ public class User3Goal4Controller
             return;
         }
 
-        // Build dummy logistics report
+        // dummy logistics report
         StringBuilder reportBuilder = new StringBuilder();
 
         reportBuilder.append("=== Logistics Cost Report ===\n");
@@ -79,7 +79,7 @@ public class User3Goal4Controller
         // Append the generated report to the text area
         reportPreviewTextArea.setText(reportBuilder.toString());
 
-        // Update notify label
+
         notifyLabel.setText(" Report generated successfully.");
     }
 
