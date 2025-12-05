@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="509.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.group7.papermillfinal.laboni.ProductivityDashboardController">
    <children>
       <Label alignment="CENTER" layoutX="154.0" layoutY="18.0" prefHeight="53.0" prefWidth="390.0" text="Employee Productivity Dashboard">
@@ -30,5 +29,10 @@
             <TableColumn fx:id="StatusCol" prefWidth="119.0" text="Status" />
         </columns>
       </TableView>
+      <Button layoutX="32.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackDashboardButton" prefHeight="32.0" prefWidth="49.0" text="&lt;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
