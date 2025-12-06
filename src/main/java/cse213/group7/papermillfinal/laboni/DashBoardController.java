@@ -8,7 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import javax.imageio.IIOException;
 import java.io.IOException;
 
 public class DashBoardController
@@ -49,7 +48,7 @@ public class DashBoardController
 
 
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void SafetyReportingOA(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/cse213/group7/papermillfinal/laboni/SafetyReporting.fxml"));
@@ -150,7 +149,7 @@ public class DashBoardController
 
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void EmployeeRecordsOA(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/cse213/group7/papermillfinal/laboni/EmployeeRecords.fxml"));
@@ -166,7 +165,7 @@ public class DashBoardController
 
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void EmployeScheduleOA(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/cse213/group7/papermillfinal/laboni/EmployeeSchedule.fxml"));
@@ -182,4 +181,47 @@ public class DashBoardController
 
     }
 
+    @javafx.fxml.FXML
+    public void EmployeeScheduleOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void EmployeeRecordOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void SefetyReportingOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void PaymentOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void TrackingOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void OrderProcessingOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void CustomerUpdateOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void DeliverySchedulingOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void SurveyOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void OrderReportOA(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void ExportOrderOA(ActionEvent actionEvent) {
+    }
 }
