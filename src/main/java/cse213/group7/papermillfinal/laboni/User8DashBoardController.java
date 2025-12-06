@@ -83,7 +83,7 @@ public class User8DashBoardController
     @javafx.fxml.FXML
     public void SurveyOA(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/cse213/group7/papermillfinal/laboni/Survey.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/cse213/group7/papermillfinal/laboni/Survey1.fxml"));
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(scene);
