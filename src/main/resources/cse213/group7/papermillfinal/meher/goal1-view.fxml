@@ -26,7 +26,7 @@
       <TextArea fx:id="invoiceTextArea" layoutX="49.0" layoutY="342.0" prefHeight="92.0" prefWidth="579.0" />
       <Button layoutX="593.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="59.0" text="Back" />
       <Label layoutX="271.0" layoutY="33.0" text="Raw Material Transport Planning" />
-      <DatePicker layoutX="431.0" layoutY="161.0" />
-      <Label fx:id="orderDatePicker" layoutX="354.0" layoutY="165.0" text="Order Date" />
+      <DatePicker fx:id="orderDatePicker" layoutX="431.0" layoutY="161.0" />
+      <Label layoutX="354.0" layoutY="165.0" text="Order Date" />
    </children>
 </AnchorPane>

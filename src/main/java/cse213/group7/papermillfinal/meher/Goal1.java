@@ -1,16 +1,20 @@
 package cse213.group7.papermillfinal.meher;
 
-public class Goal1 {
-    private String materialName,supplierName, transport ;
-    private int quantity,distance,orderDate;
+import java.io.Serializable;
+import java.time.LocalDate;
 
-    public Goal1(String materialName, String supplierName, String transport, int quantity, int orderDate, int distance) {
+public class Goal1 implements Serializable {
+    private String materialName,supplierName, transport ;
+    private int quantity,distance;
+    private LocalDate orderDate;
+
+    public Goal1(String materialName, String supplierName, int quantity, String transport, int distance, LocalDate orderDate) {
         this.materialName = materialName;
         this.supplierName = supplierName;
-        this.transport = transport;
         this.quantity = quantity;
-        this.orderDate = orderDate;
+        this.transport = transport;
         this.distance = distance;
+        this.orderDate = orderDate;
     }
 
     public String getMaterialName() {
@@ -53,11 +57,11 @@ public class Goal1 {
         this.distance = distance;
     }
 
-    public int getOrderDate() {
+    public LocalDate getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(int orderDate) {
+    public void setOrderDate(LocalDate orderDate) {
         this.orderDate = orderDate;
     }
 

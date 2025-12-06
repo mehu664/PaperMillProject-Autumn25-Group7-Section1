@@ -31,8 +31,8 @@ public class LoginTryControlle {
             Stage stage = (Stage) usernameBox.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
-        } else if ("2222".equals(username) && "meher".equals(password)) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Rochi_2320366/ContentManagerDash.fxml"));
+        } else if ("2222".equals(username) && "nessa".equals(password)) {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/cse213/group7/papermillfinal/meher/user4dashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameBox.getScene().getWindow();
             stage.setScene(new Scene(root));

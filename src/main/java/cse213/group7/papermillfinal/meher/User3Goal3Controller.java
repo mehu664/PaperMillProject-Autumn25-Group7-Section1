@@ -92,7 +92,7 @@ public class User3Goal3Controller
     public void handeBackButton(ActionEvent actionEvent) {
 
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/cse213/group7/papermillfinal/login-view.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/cse213/group7/papermillfinal/meher/user3dashboard-view.fxml"));
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(scene);
@@ -110,8 +110,7 @@ public class User3Goal3Controller
 //        }
 //        catch(Exception e){
 //            //
-//        }
-        // Uporer code back er jonno run kore na
+//
     }
 
     @javafx.fxml.FXML
