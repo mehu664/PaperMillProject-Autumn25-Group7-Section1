@@ -50,7 +50,7 @@ public class LoginTryControlle {
             stage.setScene(new Scene(root));
             stage.show();
         } else if ("5555".equals(username) && "laboni".equals(password)) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/cse213/group7/papermillfinal/laboni/User7DashBoardfxml.java"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/cse213/group7/papermillfinal/laboni/User7dashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameBox.getScene().getWindow();
             stage.setScene(new Scene(root));
